@@ -17,3 +17,4 @@ done
 # capture logs for sql commands
 psql -d lab -a -f teardown.sql
 psql -d lab -a -f setup.sql
+psql -d lab -a -f commands.sql
