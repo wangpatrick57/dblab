@@ -1,12 +1,10 @@
--- insert 3 beakers
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (500, 'BeakerCo', '2022-01-10', TRUE);
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (1000, 'LabTech', '2023-02-15', FALSE);
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (250, 'ScienceStuff', '2021-12-20', TRUE);
-
 -- testing place
 INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES ('hi', 55, '2021-12-21', FALSE);
+VALUES (250, 'LabTech', '2021-12-21', FALSE);
+
+UPDATE beaker SET manufacturer = 'LabGrow' WHERE volume_ml < 300;
+UPDATE beaker SET manufacturer = 'ShrinkSource' WHERE is_sterile = FALSE;
+
 SELECT * FROM beaker;
+SELECT * FROM beaker WHERE volume_ml = 250;
+SELECT * FROM beaker WHERE volume_ml = 300;
