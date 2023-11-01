@@ -14,10 +14,10 @@
     <scalefactor>1</scalefactor>
 
     <!-- The workload -->
-    <terminals>10</terminals>
+    <terminals>1</terminals>
     <works>
         <work>
-            <time>60</time>
+            <time>15</time>
             <rate>unlimited</rate>
             <weights>45,43,4,4,4</weights>
         </work>
