@@ -3,7 +3,7 @@ DBLAB_POSTGRES_DPATH="$HOME/dblab/d7pg"
 
 # # remove logs from before
 # # we remove here since clearing with > may take a long time if the logs are large
- -f $(readlink $DBLAB_POSTGRES_DPATH/postgresql.csv)
+rm -f $(readlink $DBLAB_POSTGRES_DPATH/postgresql.csv)
 # rm -f $(readlink $DBLAB_POSTGRES_DPATH/postgresql.log)
 
 # synchronous restart

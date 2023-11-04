@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<parameters>
+
+    <!-- Connection details -->
+    <type>POSTGRES</type>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/lab?sslmode=disable&amp;ApplicationName=replay&amp;reWriteBatchedInserts=true</url>
+    <username>admin</username>
+    <password>password</password>
+    <isolation>TRANSACTION_READ_COMMITTED</isolation>
+    <batchsize>128</batchsize>
+    <retries>1</retries>
+
+    <!-- The workload -->
+    <terminals>1</terminals>
+    <works>
+        <work>
+            <replay>true</replay>
+            <replayspeedup>unlimited</replayspeedup>
+            <replayfile>~/dblab/d7pg/lab_log.csv</replayfile>
+
+            <rate>1</rate>
+            <weights>1</weights>
+        </work>
+    </works>
+
+    <!-- Transaction types -->
+    <transactiontypes>
+        <transactiontype>
+            <name>DynamicProcedure</name>
+            <preExecutionWait>0</preExecutionWait>
+            <postExecutionWait>0</postExecutionWait>
+        </transactiontype>
+    </transactiontypes>
+    
+</parameters>
