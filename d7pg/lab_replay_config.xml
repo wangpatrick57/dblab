@@ -16,7 +16,7 @@
     <works>
         <work>
             <replay>true</replay>
-            <replayspeedup>unlimited</replayspeedup>
+            <replayspeedup>10</replayspeedup>
             <replayfile>~/dblab/d7pg/lab_log.csv</replayfile>
 
             <rate>1</rate>
