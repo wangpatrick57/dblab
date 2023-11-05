@@ -18,9 +18,9 @@
             <replay>true</replay>
             <replayspeedup>unlimited</replayspeedup>
             <replayfile>~/dblab/d7pg/tpcc_log.csv</replayfile>
+            <weights>100</weights>
 
             <rate>1</rate>
-            <weights>1</weights>
         </work>
     </works>
 
