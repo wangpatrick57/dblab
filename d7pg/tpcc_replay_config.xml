@@ -12,11 +12,11 @@
     <retries>1</retries>
 
     <!-- The workload -->
-    <terminals>1</terminals>
+    <terminals>10</terminals>
     <works>
         <work>
             <replay>true</replay>
-            <replayspeedup>2</replayspeedup>
+            <replayspeedup>1</replayspeedup>
             <replayfile>~/dblab/d7pg/tpcc_log.csv</replayfile>
 
             <rate>1</rate>
