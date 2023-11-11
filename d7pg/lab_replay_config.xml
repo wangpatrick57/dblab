@@ -17,7 +17,7 @@
         <work>
             <replay>true</replay>
             <replayspeedup>10</replayspeedup>
-            <replayfile>~/dblab/d7pg/lab_log.csv</replayfile>
+            <logfile>~/dblab/d7pg/lab_log.csv</logfile>
             <weights>100</weights>
 
             <rate>1</rate>

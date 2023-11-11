@@ -16,8 +16,8 @@
     <works>
         <work>
             <replay>true</replay>
-            <replayspeedup>unlimited</replayspeedup>
-            <replayfile>~/dblab/d7pg/tpcc_log.csv</replayfile>
+            <replayspeedup>1</replayspeedup>
+            <logfile>~/dblab/d7pg/tpcc_log.csv</logfile>
             <weights>100</weights>
 
             <rate>1</rate>
