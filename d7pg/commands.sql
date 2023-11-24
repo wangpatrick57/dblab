@@ -12,7 +12,7 @@ SELECT * FROM beaker;
 SELECT * FROM beaker WHERE volume_ml = 250;
 -- SELECT pg_sleep(5);
 SELECT * FROM beaker WHERE volume_ml = 400;
-ABORT;
+ROLLBACK;
 
 -- random query which starts at late timestamp
 SELECT * FROM beaker;
