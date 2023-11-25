@@ -11,10 +11,10 @@
     <batchsize>128</batchsize>
 
     <!-- Scale factor is the number of warehouses in TPCC -->
-    <scalefactor>4</scalefactor>
+    <scalefactor>1</scalefactor>
 
     <!-- The workload -->
-    <terminals>16</terminals>
+    <terminals>4</terminals>
     <works>
         <work>
             <time>30</time>
