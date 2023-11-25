@@ -1,14 +1,27 @@
 -- beaker table
 CREATE TABLE beaker (
+  -- id
   id SERIAL PRIMARY KEY,
-  volume_ml INTEGER NOT NULL,
+
+  -- all main types
+  volume_ml INTEGER,
+  rating DECIMAL,
   manufacturer VARCHAR(255),
   date_acquired DATE,
-  is_sterile BOOLEAN DEFAULT TRUE
+  time_acquired TIME,
+  timestamp_acquired TIMESTAMP,
+  is_sterile BOOLEAN,
+
+  -- trying some nulls
+  make_me_null1 INTEGER,
+  make_me_null2 BOOLEAN,
+  make_me_null3 TIMESTAMP,
+
+  -- type variants
+  a_smallint SMALLINT,
+  a_bigint BIGINT,
+  a_char CHAR(50),
+  a_numeric NUMERIC,
+  a_float FLOAT,
+  a_real REAL
 );
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (500, 'BeakerCo', '2022-01-10', TRUE);
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (1000, 'LabTech', '2023-02-15', FALSE);
-INSERT INTO beaker (volume_ml, manufacturer, date_acquired, is_sterile)
-VALUES (250, 'ScienceStuff', '2021-12-20', TRUE);
