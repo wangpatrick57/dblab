@@ -25,3 +25,9 @@ CREATE TABLE beaker (
   a_float FLOAT,
   a_real REAL
 );
+INSERT INTO beaker (volume_ml, rating, manufacturer) VALUES
+(5, 1.5, 'A'),
+(5, 1.5, 'B'),
+(10, 2.5, 'C'),
+(5, 2.5, 'D'),
+(10, 1.5, 'E');
